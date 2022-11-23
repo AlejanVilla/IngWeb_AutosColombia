@@ -29,7 +29,7 @@ a{
 .header{
     grid-area: header;
     background: #040538;
-    color: #fff;
+    color: #fff;    
 }
  
 .nav1{
@@ -69,7 +69,7 @@ a{
  
 .nav2 a{
     color: #013d59;
-    /*padding: 10px 12px;*/
+    padding: 10px 12px;
     font-weight: bold;
     line-height: 20px;
 }
