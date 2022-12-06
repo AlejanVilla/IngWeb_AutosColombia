@@ -16,20 +16,15 @@
              </nav>  
                  <h4>Datos Personales</h4>      
             
-                    <form action="" class="form" id="form">
-                        <div class="form_grupo" id="grupo_tipo">
-                        <label for="tipo" class="form_label">Tipo Documento:</label>
-                            <div class="form_input">
-                                <select class="input_form">
-                                    <option value="">Seleccionar</option>
-                                    <option value="">Cedula Ciudadanía</option>
-                                    <option value="">Cedula Extrangeria</option>
-                                    <option value="">Tarjeta Identidad</option>  
-                                    <option value="">Otro</option>                          
-                                </select>                                
-                            </div>                     
-                        </div>
+                    <form action="registrar.php" method="POST" class="form" id="form">
 
+                        <div class="form_grupo" id="grupo_doc">
+                            <label for="doc" class="form_label">Tipo Documento:</label>
+                            <div class="form_input">
+                                <input type="text" class="input_form" name="tipo" id="doc">                                
+                            </div>                                                    
+                        </div>
+                        
                         <div class="form_grupo" id="grupo_doc">
                             <label for="doc" class="form_label">N° Documento:</label>
                             <div class="form_input">
@@ -58,75 +53,66 @@
                             </div> 
                                                    
                         </div>
-                        <div class="form_grupo" id="grupo_tipousu">
-                        <label for="tipo" class="form_label">Tipo Cliente:</label>
-                        <div class="form_input">
-                            <select class="input_form">
-                                <option value="">Seleccionar</option>
-                                <option value="">Estándar</option>
-                                <option value="">Premium</option>                    
-                            </select>                            
-                        </div>           
-                                                 
-                    </div>
+
+                        <div class="form_grupo" id="grupo_phone">
+                            <label for="phone" class="form_label">Tipo Cliente:</label>
+                            <div class="form_input">
+                                <input type="text" class="input_form" name="tipoc" id="phone">                                
+                            </div>                                                   
+                        </div>
+                        
 
                     <h4>Datos Vehículo</h4>
                      
                     <div></div>
-                    <div class="form_grupo" id="grupo_tipousu">
-                    <label for="tipo" class="form_label">Tipo:</label>
-                    <div class="form_input">
-                        <select class="input_form">
-                            <option value="">Seleccionar</option>
-                            <option value="">Carro Estándar</option>
-                            <option value="">Camioneta</option>
-                            <option value="">Motocicleta Estándar</option>      
-                            <option value="">Motocicleta Alto Cilindraje</option>                  
-                        </select>                        
-                        </div>                            
+                    <div class="form_grupo" id="grupo_user">
+                        <label for="user" class="form_label">Tipo:</label>
+                        <div class="form_input">
+                            <input type="text" class="input_form" name="tipov" id="user">                                
+                        </div>                                                   
                     </div>
-
+                    
                         <div class="form_grupo" id="grupo_user">
                             <label for="user" class="form_label">Marca:</label>
                             <div class="form_input">
-                                <input type="text" class="input_form" name="user" id="user">                                
+                                <input type="text" class="input_form" name="marca" id="user">                                
                             </div>                                                   
                         </div>
 
                         <div class="form_grupo" id="grupo_pass">
                             <label for="pass" class="form_label">Categoría:</label>
                             <div class="form_input">
-                                <input type="text" class="input_form" name="pass" id="pass">                               
+                                <input type="text" class="input_form" name="categoria" id="pass">                               
                             </div>                                                    
                         </div>
 
                         <div class="form_grupo" id="grupo_pass">
                             <label for="pass" class="form_label">Modelo:</label>
                             <div class="form_input">
-                                <input type="text" class="input_form" name="pass" id="pass">                                
+                                <input type="text" class="input_form" name="modelo" id="pass">                                
                             </div>                                                    
                         </div>
 
                         <div class="form_grupo" id="grupo_pass">
                             <label for="pass" class="form_label">Cilindraje:</label>
                             <div class="form_input">
-                                <input type="text" class="input_form" name="pass" id="pass">                                
+                                <input type="text" class="input_form" name="cilind" id="pass">                                
                             </div>                                                    
                         </div>
 
                         <div class="form_grupo" id="grupo_pass">
                             <label for="pass" class="form_label">Color:</label>
                             <div class="form_input">
-                                <input type="text" class="input_form" name="pass" id="pass">                                
+                                <input type="text" class="input_form" name="color" id="pass">                                
                             </div>                                                    
                         </div>
                                                
                         <div class="form_grupo form_save">
-                            <button type="submit" class="save">Enviar</button>                            
+                            <button type="submit" class="save" name="enviar">Enviar</button>                            
                         </div>                        
-                    </form>            
+                    </form>         
         </main>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    
+
 </body>
 </html>
